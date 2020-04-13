@@ -1,14 +1,17 @@
-# pluto-app
-
-run the following steps after pulling down the code
-
-in the ClientApp directory, `run npm install npm install @angular-devkit/schematics`
-
-`run ng update @angular/cli`
-
-The environment version the following based off the package.json file
-
-` "dependencies": { 
+{
+  "name": "pluto_app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "echo Starting... && ng serve",
+    "build": "ng build",
+    "build:ssr": "ng run pluto_app:server:dev",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
     "@angular-devkit/schematics": "^9.1.1",
     "@angular/animations": "9.1.1",
     "@angular/common": "9.1.1",
@@ -53,4 +56,5 @@ The environment version the following based off the package.json file
     "protractor": "~5.4.2",
     "ts-node": "~8.4.1",
     "tslint": "~5.20.0"
-  }`
+  }
+}
