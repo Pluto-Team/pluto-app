@@ -67,8 +67,8 @@ namespace pluto_app
 
                 if (env.IsDevelopment())
                 {
-                    // builds out the angular application and serves it localhost:5001
-                    spa.UseAngularCliServer(npmScript: "start");
+                    //spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
             });
         }
